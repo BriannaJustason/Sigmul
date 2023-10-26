@@ -15,4 +15,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Sigmul3"
 include(":app")
- 
