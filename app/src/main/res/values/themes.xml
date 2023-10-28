@@ -10,5 +10,7 @@
     </style>
 
     <style name="Theme.Sigmul3" parent="Base.Theme.Sigmul3" />
-
+    <style name ="ThemeOverlay.AppCompat.navTheme">
+        <item name="colorPrimary">@color/white</item>
+    </style>
 </resources>
