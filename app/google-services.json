@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "482965991794",
+    "project_id": "sigmul3-5f924",
+    "storage_bucket": "sigmul3-5f924.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482965991794:android:510e20b4c4a08f6a4dedeb",
+        "android_client_info": {
+          "package_name": "com.example.sigmul3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsZjCjj6E-S78-Qgae1-Tgkwal-vfwPXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

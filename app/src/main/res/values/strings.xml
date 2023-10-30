@@ -2,4 +2,7 @@
     <string name="app_name">Sigmul</string>
     <string name="navi_drawer_open">Open Navi Drawer</string>
     <string name="navi_drawer_close">Close Navi Drawer</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
 </resources>
