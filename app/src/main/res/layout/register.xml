@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_green">
+    android:background="@color/light_green"
+    >
 
 
     <TextView
@@ -11,15 +12,14 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/email"
         android:layout_marginBottom="3dp"
-        android:fontFamily="@font/Daylight"
         android:gravity="center"
-        android:text="@string/login"
-        android:textSize="34sp"
+        android:text="@string/register"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -30,7 +30,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/log_in"
+        android:id="@+id/register_btn"
         android:layout_width="170dp"
         android:layout_height="13dp"
         android:layout_below="@+id/password"
@@ -39,9 +39,10 @@
         android:layout_marginTop="53dp"
         android:layout_marginEnd="121dp"
         android:layout_marginBottom="113dp"
-        android:fontFamily="@font/Daylight"
-        android:text="Login"
-        android:textSize="24sp" />
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#000000"
+        app:iconTint="@color/lite_green" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/password"
@@ -57,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="223dp"
+        android:layout_marginBottom="224dp"
         android:hint="@string/email"
         android:minHeight="48dp" />
 
