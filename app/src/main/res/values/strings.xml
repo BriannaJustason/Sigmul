@@ -1,9 +1,43 @@
 <resources>
     <string name="app_name">Sigmul</string>
+    <string name="key">sk-2OK86503ba7f18f8d2166&amp;&amp;</string>
     <string name="navi_drawer_open">Open Navi Drawer</string>
     <string name="navi_drawer_close">Close Navi Drawer</string>
     <string name="login">Login</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="register">Register</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_box_hint">Enter Plant Name</string>
+    <string name="add_a_plant">Add a Plant</string>
+    <string name="search">Search</string>
+
+    <string-array name="EdibleChoice">
+        <item>Yes</item>
+        <item>No</item>
+        <item>N/A</item>
+    </string-array>
+
+    <string-array name="PoisonousChoice">
+        <item>Yes</item>
+        <item>No</item>
+        <item>N/A</item>
+    </string-array>
+
+    <string-array name="WateringChoice">
+        <item>Frequent</item>
+        <item>Average</item>
+        <item>Minimum</item>
+        <item>None</item>
+        <item>N/A</item>
+    </string-array>
+
+    <string-array name="SunlightChoice">
+        <item>Full Shade</item>
+        <item>Part Shade</item>
+        <item>Sun-part Shade</item>
+        <item>Full Sun</item>
+        <item>N/A</item>
+    </string-array>
 </resources>

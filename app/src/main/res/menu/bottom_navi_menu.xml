@@ -4,6 +4,7 @@
 
 
     <item android:title="Garden"
+        android:id="@+id/garden"
         android:icon="@drawable/baseline_local_florist_24"
         />
     <item
