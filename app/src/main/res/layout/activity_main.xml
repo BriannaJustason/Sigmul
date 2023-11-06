@@ -35,21 +35,29 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/fragment_container"/>
+
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:layout_gravity="bottom"
-            android:backgroundTint="@color/light_green"
+            android:background="@color/light_green"
+
+            android:clickable="false"
+            android:scrollIndicators="left"
             app:fabCradleMargin="10dp"
             app:fabCradleRoundedCornerRadius="50dp"
-            android:layout_alignParentBottom="true"
+            app:itemIconTint="@color/mod_green"
+            app:itemRippleColor="@color/lite_green"
+
+            app:itemTextAppearanceActive="@style/Theme.Sigmul3"
+            app:itemTextColor="@color/accent_yellow"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:menu="@menu/bottom_navi_menu"
-            android:scrollIndicators="left"/>
+            app:menu="@menu/bottom_navi_menu" />
     </RelativeLayout>
 
 

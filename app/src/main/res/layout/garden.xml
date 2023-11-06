@@ -30,51 +30,55 @@
                 android:layout_height="197dp"
                 app:srcCompat="@mipmap/ic_channel_foreground" />
 
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="574dp"
-                android:layout_height="196dp"
-                app:srcCompat="@mipmap/ic_channel_foreground" />
-        </FrameLayout>
-
-        <androidx.coordinatorlayout.widget.CoordinatorLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#A7C7B5">
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="263dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center_horizontal"
-                android:gravity="center"
-                android:text="Garden"
-                android:textColor="#538C47"
-                android:textSize="48sp" />
-
-            <com.google.android.material.bottomappbar.BottomAppBar
-                android:id="@+id/bottomAppBar"
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:backgroundTint="@color/light_green"
-                app:fabCradleMargin="10dp"
-                app:fabCradleRoundedCornerRadius="50dp">
+                android:layout_height="match_parent"
+                android:background="#A7C7B5">
 
-                <com.google.android.material.bottomnavigation.BottomNavigationView
-                    android:id="@+id/bottom_navigation"
-                    android:layout_width="wrap_content"
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="265dp"
+                    android:layout_height="229dp"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/angelina"
+                    android:gravity="center"
+                    android:text="Garden"
+                    android:textColor="#538C47"
+                    android:textSize="96sp" />
+
+
+                <com.google.android.material.bottomappbar.BottomAppBar
+                    android:id="@+id/bottomAppBar"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    app:labelVisibilityMode="labeled"
-                    app:menu="@menu/bottom_navi_menu">
+                    android:layout_gravity="bottom"
+                    android:backgroundTint="@color/light_green"
+                    android:fontFamily="@font/angelina"
+                    app:fabCradleMargin="10dp"
+                    app:fabCradleRoundedCornerRadius="50dp">
 
-                </com.google.android.material.bottomnavigation.BottomNavigationView>
+                    <com.google.android.material.bottomnavigation.BottomNavigationView
+                        android:id="@+id/bottom_navigation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/angelina"
+                        app:labelVisibilityMode="labeled"
+                        app:menu="@menu/bottom_navi_menu">
 
-            </com.google.android.material.bottomappbar.BottomAppBar>
+                    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
+                </com.google.android.material.bottomappbar.BottomAppBar>
 
-        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/plantRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="495dp"
+                    android:layout_marginTop="160dp" /> />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </FrameLayout>
 
     </RelativeLayout>
 </FrameLayout>
