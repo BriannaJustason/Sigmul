@@ -6,60 +6,33 @@
     android:background="@color/light_green">
 
 
-    <TextView
+    <EditText
+        android:id="@+id/username1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/email"
-        android:layout_marginBottom="3dp"
-        android:fontFamily="@font/Daylight"
-        android:gravity="center"
-        android:text="@string/login"
-        android:textSize="34sp"
-        android:textStyle="bold" />
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="-321dp"
+        android:hint="User Name"
+        android:minHeight="48dp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
+        android:id="@+id/password1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </com.google.android.material.textfield.TextInputLayout>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username1"
+        android:layout_marginTop="50dp"
+        android:hint="Password"
+        android:minHeight="48dp" />
 
     <Button
-        android:id="@+id/log_in"
-        android:layout_width="170dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/password"
+        android:id="@+id/btnsignin1"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password1"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="121dp"
-        android:layout_marginBottom="113dp"
-        android:fontFamily="@font/Daylight"
-        android:text="Login"
-        android:textSize="24sp" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/email"
-        android:layout_marginBottom="-46dp"
-        android:hint="@string/password"
-        android:minHeight="48dp" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="223dp"
-        android:hint="@string/email"
-        android:minHeight="48dp" />
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="112dp"
+        android:text="Sign in" />
 
     <ImageView
         android:id="@+id/imageView3"

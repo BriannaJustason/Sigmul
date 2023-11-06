@@ -4,6 +4,7 @@
 
 
     <item android:title="Garden"
+        android:id="@+id/garden"
         android:icon="@drawable/baseline_local_florist_24"
         />
     <item
@@ -12,8 +13,6 @@
         android:icon="@drawable/baseline_add_circle_24"
         android:enabled="true"/>
 
-    <item android:title="Home"
-        android:icon="@drawable/baseline_home_24" />
 
 
 </menu>
