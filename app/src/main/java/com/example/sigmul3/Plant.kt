@@ -13,12 +13,12 @@ data class PlantResponse(
 data class Plant(
     @SerializedName("id") val id: Int,
     @SerializedName("common_name") val commonName: String,
-    @SerializedName("scientific_name") val scientificName: List<String>,
-    @SerializedName("other_name") val otherName: List<String>,
-    @SerializedName("cycle") val cycle: String,
+    @SerializedName("default_image") val defaultImage: DefaultImage,
+    @SerializedName("edible") val edible: String,
+    @SerializedName("poisonous") val poisonous: String,
     @SerializedName("watering") val watering: String,
     @SerializedName("sunlight") val sunlight: Any, // Handle the varying type
-    @SerializedName("default_image") val defaultImage: DefaultImage
+
 )
 
 data class DefaultImage(

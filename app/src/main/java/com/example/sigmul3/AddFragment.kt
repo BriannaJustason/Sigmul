@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.delasign.samplestarterproject.utils.data.PlantDataHandler
 import com.delasign.samplestarterproject.utils.data.com.example.sigmul3.PlantAdapter
+import com.delasign.samplestarterproject.utils.data.com.example.sigmul3.PlantDialog
 
 
 class AddFragment : Fragment() {
@@ -247,7 +248,7 @@ class AddFragment : Fragment() {
                         recyclerView.layoutManager = layoutManager
 
                         // Create an instance of PlantAdapter and set it to the RecyclerView
-                        val plantAdapter = PlantAdapter(plantList) // Provide your list of plants here
+                        val plantAdapter = PlantAdapter(plantList, false) // Provide your list of plants here
                         recyclerView.adapter = plantAdapter
 
                     }

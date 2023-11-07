@@ -26,7 +26,7 @@ class HomeFragment : Fragment() {
         recyclerView.layoutManager = layoutManager
         val plantDBHelper = PlantDBHelper(requireContext())
         val plantList = plantDBHelper.getAllPlants()
-        val plantAdapter = PlantAdapter(plantList)
+        val plantAdapter = PlantAdapter(plantList, true)
         recyclerView.adapter = plantAdapter
 
         return rootView
