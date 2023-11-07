@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sigmul3.R
 import com.squareup.picasso.Picasso
@@ -42,7 +43,20 @@ class PlantAdapter(private val plantList: List<Plant>) :
         holder.addButton.setOnClickListener {
             // Perform an action when the "add" button is clicked
             // You can access the plant associated with this item using plantList[position]
-           
+            val clickedPlant = plantList[position]
+
+            // Now, insert the clicked plant into the database
+            val dbHelper = PlantDBHelper(holder.itemView.context)
+            val result = dbHelper.insertPlant(clickedPlant)
+
+            if (result != -1L) {
+                // Plant was successfully added to the database
+                val message = "Added ${clickedPlant.commonName} to your collection"
+                Toast.makeText(holder.itemView.context, message, Toast.LENGTH_SHORT).show()
+            } else {
+                // Error occurred while adding the plant to the database
+                Toast.makeText(holder.itemView.context, "Failed to add the plant", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
