@@ -1,5 +1,6 @@
 package com.delasign.samplestarterproject.utils.data.com.example.sigmul3
 
+import Plant
 import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
@@ -7,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper
 
 
 class DBHelper(context: Context?) :
-    SQLiteOpenHelper(context, "Login.db", null, 1) {
+    SQLiteOpenHelper(context, "Login.db", null, 1)  {
     override fun onCreate(MyDB: SQLiteDatabase) {
         MyDB.execSQL("create Table users(username TEXT primary key, password TEXT)")
     }
@@ -43,4 +44,6 @@ class DBHelper(context: Context?) :
     companion object {
         const val DBNAME = "Login.db"
     }
+
+
 }

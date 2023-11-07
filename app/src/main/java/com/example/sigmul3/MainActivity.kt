@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import com.google.gson.Gson
 import android.util.Log
 import android.widget.ImageView
+import com.delasign.samplestarterproject.utils.data.com.example.sigmul3.PlantDBHelper
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.squareup.picasso.Picasso
 import java.lang.Exception
@@ -44,7 +45,6 @@ class MainActivity : AppCompatActivity() {
                     false}
             }
         }
-
         val url = "https://perenual.com/api/species-list?key=sk-2OK86503ba7f18f8d2166&q=Indian plantain"
         val requestUrl = "https://perenual.com/api/species-list?key=sk-2OK86503ba7f18f8d2166&&q=&edible=&poisonous=&watering=&sunlight="
 

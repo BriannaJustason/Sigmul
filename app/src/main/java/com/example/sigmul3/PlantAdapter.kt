@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.sigmul3.R
 import com.squareup.picasso.Picasso
 
+
 class PlantAdapter(private val plantList: List<Plant>) :
     RecyclerView.Adapter<PlantAdapter.ViewHolder>() {
 
@@ -41,6 +42,7 @@ class PlantAdapter(private val plantList: List<Plant>) :
         holder.addButton.setOnClickListener {
             // Perform an action when the "add" button is clicked
             // You can access the plant associated with this item using plantList[position]
+           
         }
     }
 

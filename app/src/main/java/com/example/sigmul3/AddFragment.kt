@@ -1,6 +1,6 @@
 package com.example.sigmul3
 
-import Plant
+
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -31,7 +31,6 @@ class AddFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // Move any UI-related code to onCreateView
-
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -250,6 +249,7 @@ class AddFragment : Fragment() {
                         // Create an instance of PlantAdapter and set it to the RecyclerView
                         val plantAdapter = PlantAdapter(plantList) // Provide your list of plants here
                         recyclerView.adapter = plantAdapter
+
                     }
                 },
                 onError = { errorMessage ->
@@ -258,6 +258,8 @@ class AddFragment : Fragment() {
                 }
             )
         }
+
+
     }
 }
 
