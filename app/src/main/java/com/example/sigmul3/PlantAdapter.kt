@@ -1,7 +1,5 @@
 package com.delasign.samplestarterproject.utils.data.com.example.sigmul3
 
-import Plant
-import android.content.ContentValues
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +10,8 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sigmul3.R
 import com.squareup.picasso.Picasso
-
+import Plant
+import android.content.ContentValues
 
 class PlantAdapter(private val plantList: List<Plant>, private val shouldHideAddButton: Boolean):
     RecyclerView.Adapter<PlantAdapter.ViewHolder>() {
@@ -21,6 +20,24 @@ class PlantAdapter(private val plantList: List<Plant>, private val shouldHideAdd
         val titleTextView: TextView = itemView.findViewById(R.id.plantTitleTextView)
         val imageView: ImageView = itemView.findViewById(R.id.plantImageView)
         val addButton: Button = itemView.findViewById(R.id.addButton)
+    }
+
+    // Inner class for item click handling
+    inner class PlantViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        init {
+            itemView.setOnClickListener {
+                val position = adapterPosition
+                if (position != RecyclerView.NO_POSITION) {
+                    onItemClickListener?.invoke(plantList[position])
+                }
+            }
+        }
+    }
+
+    private var onItemClickListener: ((Plant) -> Unit)? = null
+
+    fun setOnItemClickListener(listener: (Plant) -> Unit) {
+        onItemClickListener = listener
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
