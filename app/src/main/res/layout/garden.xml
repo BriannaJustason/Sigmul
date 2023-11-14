@@ -41,7 +41,7 @@
                     android:layout_width="265dp"
                     android:layout_height="229dp"
                     android:layout_gravity="center_horizontal"
-                    android:fontFamily="@font/VertigoFLF"
+                    android:fontFamily="@font/vertigoflf"
                     android:gravity="center"
                     android:text="Garden"
                     android:textColor="#538C47"
@@ -54,7 +54,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
                     android:backgroundTint="@color/light_green"
-                    android:fontFamily="@font/VertigoFLF"
+                    android:fontFamily="@font/vertigoflf"
                     app:fabCradleMargin="10dp"
                     app:fabCradleRoundedCornerRadius="50dp">
 
@@ -63,7 +63,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@android:color/transparent"
-                        android:fontFamily="@font/VertigoFLF"
+                        android:fontFamily="@font/vertigoflf"
                         app:labelVisibilityMode="labeled"
                         app:menu="@menu/bottom_navi_menu">
 

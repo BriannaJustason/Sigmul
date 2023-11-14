@@ -42,7 +42,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="13dp"
         android:layout_marginEnd="120dp"
-        android:fontFamily="@font/VertigoFLF"
+        android:fontFamily="@font/vertigoflf"
         android:text="Register"
         android:textSize="24sp" />
 
@@ -54,7 +54,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="29dp"
         android:layout_marginEnd="62dp"
-        android:fontFamily="@font/VertigoFLF"
+        android:fontFamily="@font/vertigoflf"
         android:text="Existing user! Go to Sign in page"
         android:textSize="24sp" />
 

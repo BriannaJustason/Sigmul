@@ -31,7 +31,7 @@
                 android:layout_height="75dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="60dp"
-                android:fontFamily="@font/VertigoFLF"
+                android:fontFamily="@font/vertigoflf"
                 android:gravity="center"
                 android:text="Add a Plant"
                 android:textColor="#538C47"
@@ -47,7 +47,7 @@
                     android:id="@+id/searchParamLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="140dp"
+                    android:layout_marginTop="110dp"
                     android:orientation="vertical">
 
                     <EditText
@@ -56,7 +56,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
-                        android:fontFamily="@font/VertigoFLF"
+                        android:fontFamily="@font/vertigoflf"
                         android:hint="@string/search_box_hint"
                         android:minHeight="48dp"
                         android:textSize="20sp" />
@@ -74,7 +74,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="start"
-                            android:fontFamily="@font/VertigoFLF"
+                            android:fontFamily="@font/vertigoflf"
                             android:gravity="start"
                             android:text="Edible:"
                             android:textColor="#538C47"
@@ -84,7 +84,7 @@
                             android:id="@+id/edibleSpinner"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/VertigoFLF"
+                            android:fontFamily="@font/vertigoflf"
                             tools:ignore="TouchTargetSizeCheck" />
                     </LinearLayout>
 
@@ -101,7 +101,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="start"
-                            android:fontFamily="@font/VertigoFLF"
+                            android:fontFamily="@font/vertigoflf"
                             android:gravity="start"
                             android:text="Poisonous:"
                             android:textColor="#538C47"
@@ -112,7 +112,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="end"
-                            android:fontFamily="@font/VertigoFLF"
+                            android:fontFamily="@font/vertigoflf"
                             tools:ignore="TouchTargetSizeCheck" />
                     </LinearLayout>
 
@@ -129,7 +129,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="start"
-                            android:fontFamily="@font/VertigoFLF"
+                            android:fontFamily="@font/vertigoflf"
                             android:gravity="start"
                             android:text="Water:"
                             android:textColor="#538C47"
@@ -140,7 +140,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="end"
-                            android:fontFamily="@font/VertigoFLF"
+                            android:fontFamily="@font/vertigoflf"
                             tools:ignore="TouchTargetSizeCheck" />
                     </LinearLayout>
 
@@ -157,7 +157,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="start"
-                            android:fontFamily="@font/VertigoFLF"
+                            android:fontFamily="@font/vertigoflf"
                             android:gravity="start"
                             android:text="Sunlight:"
                             android:textColor="#538C47"
@@ -168,7 +168,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="end"
-                            android:fontFamily="@font/VertigoFLF"
+                            android:fontFamily="@font/vertigoflf"
                             tools:ignore="TouchTargetSizeCheck" />
                     </LinearLayout>
 
@@ -178,7 +178,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="@font/VertigoFLF"
+                        android:fontFamily="@font/vertigoflf"
                         android:gravity="center"
                         android:text="@string/search"
                         android:textSize="24sp" />
@@ -188,8 +188,8 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/plantRecyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="430dp" />
+                android:layout_height="200dp"
+                android:layout_marginTop="460dp" />
 
             <com.google.android.material.bottomappbar.BottomAppBar
                 android:id="@+id/bottomAppBar"
