@@ -21,8 +21,6 @@ class PlantAdapter(private val plantList: List<Plant>, private val shouldHideAdd
         val imageView: ImageView = itemView.findViewById(R.id.plantImageView)
         val addButton: Button = itemView.findViewById(R.id.addButton)
     }
-
-    // Inner class for item click handling
     inner class PlantViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         init {
             itemView.setOnClickListener {
@@ -33,12 +31,12 @@ class PlantAdapter(private val plantList: List<Plant>, private val shouldHideAdd
             }
         }
     }
-
     private var onItemClickListener: ((Plant) -> Unit)? = null
 
     fun setOnItemClickListener(listener: (Plant) -> Unit) {
         onItemClickListener = listener
     }
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)

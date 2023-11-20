@@ -16,7 +16,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.delasign.samplestarterproject.utils.data.PlantDataHandler
 import com.delasign.samplestarterproject.utils.data.com.example.sigmul3.PlantAdapter
-import com.delasign.samplestarterproject.utils.data.com.example.sigmul3.PlantDialog
 
 
 class AddFragment : Fragment() {
